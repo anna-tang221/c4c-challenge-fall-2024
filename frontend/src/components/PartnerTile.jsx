@@ -9,13 +9,15 @@ function PartnerTile({ partnerData }) {
 
   return (
     <div className="partner-tile">
-      <img className="partner-thumbnail" src='' />
+      <img className="partner-thumbnail" src={partnerData.logo || 'placeholder.jpg'} alt={partnerData.name} />
       <hr />
       <div className="partner-info">
-        This is some placeholder content - you'll need to replace the content here with actual partner information.
+        <h2>{partnerData.name}</h2>
+        <p>{partnerData.description}</p>
+        <p>{partnerData.active ? 'Currently Active' : 'Not Active'}</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default PartnerTile;
