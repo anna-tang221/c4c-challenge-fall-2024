@@ -14,7 +14,7 @@ function PartnerTile({ partnerData }) {
       <div className="partner-info">
         <h2>{partnerData.name}</h2>
         <p>{partnerData.description}</p>
-        <p>{partnerData.active ? 'Currently Active' : 'Not Active'}</p>
+        <p>{partnerData.active ? 'Active' : 'Not Active'}</p>
       </div>
     </div>
   );
